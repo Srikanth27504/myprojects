@@ -1,0 +1,23 @@
+<mvc:View
+    controllerName="ui5.walkthrough.controller.App"
+    xmlns="sap.m"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true">
+  <Shell>
+    <App
+      class="myAppDemoWT"
+      id="app">
+
+      <!-- Static homepage content or initializer page -->
+      <Page title="{i18n>homePageTitle}"
+            class="sapUiResponsiveContentPadding">
+        <content>
+          <mvc:XMLView viewName="ui5.walkthrough.view.HelloPanel"/>
+          <mvc:XMLView viewName="ui5.walkthrough.view.InvoiceList"/>
+        </content>
+      </Page>
+      
+      <!-- Router-injected pages (Overview, Detail, etc.) will go here -->
+    </App>
+  </Shell>
+</mvc:View>
